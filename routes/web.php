@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('products', 'ProductsController@index');
+Route::get('brands', 'BrandsController@index');
+Route::get('photos', 'PhotosController@index');
+Route::get('productphotos', 'ProductPhotosController@index');
+Route::get('reviews', 'ReviewsController@index');
+Route::get('sliders', 'SlidersController@index');
